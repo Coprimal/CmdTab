@@ -4,6 +4,8 @@ All notable changes to CmdTab are listed here. `scripts/publish-release.sh` uses
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-11-18
+
 ### Changed
 - CmdTab moved to github.com/Coprimal/CmdTab, and updates now come from cmdtab.coprimal.dev. Settings > About shows Coprimal.
 
