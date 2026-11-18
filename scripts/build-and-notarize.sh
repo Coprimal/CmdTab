@@ -148,7 +148,7 @@ KEYCHAIN_ED_KEY="$("$GK" --account CmdTab -p 2>/dev/null | tr -d '[:space:]' || 
 FEED_URL="$(/usr/libexec/PlistBuddy -c "Print :SUFeedURL" "$INFO_PLIST" 2>/dev/null | tr -d '[:space:]' || true)"
 [[ "$FEED_URL" == https://* ]] \
   || { echo "error: SUFeedURL in $INFO_PLIST is '${FEED_URL:-unset}', expected an https:// URL." >&2
-       echo "       Point it at https://raw.githubusercontent.com/dinhanhthi/CmdTab/main/appcast.xml" >&2
+       echo "       Point it at https://cmdtab.coprimal.dev/appcast.xml" >&2
        exit 1; }
 
 xcrun notarytool history --keychain-profile "$NOTARY_PROFILE" >/dev/null 2>&1 \

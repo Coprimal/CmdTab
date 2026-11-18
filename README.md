@@ -6,7 +6,7 @@
 
 Cmd+Tab between windows, not apps, on macOS.
 
-[![Download](https://img.shields.io/badge/Download-macOS-black?style=for-the-badge&logo=apple)](https://github.com/dinhanhthi/CmdTab/releases/latest)
+[![Download](https://img.shields.io/badge/Download-macOS-black?style=for-the-badge&logo=apple)](https://github.com/Coprimal/CmdTab/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 </div>
@@ -51,4 +51,4 @@ Without the Developer ID certificate, add `CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+MIT © [Coprimal](https://coprimal.dev), see [LICENSE](LICENSE).

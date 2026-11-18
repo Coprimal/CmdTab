@@ -220,9 +220,9 @@ struct SettingsSidebarView: View {
                 Text(AppInfo.name).font(.title2.weight(.semibold))
                 Text("Version \(AppInfo.version)")
                     .foregroundStyle(.secondary)
-                Text("Anh-Thi DINH")
-                Link("github.com/dinhanhthi/CmdTab",
-                     destination: URL(string: "https://github.com/dinhanhthi/CmdTab")!)
+                Link("Coprimal", destination: URL(string: "https://coprimal.dev")!)
+                Link("github.com/Coprimal/CmdTab",
+                     destination: URL(string: "https://github.com/Coprimal/CmdTab")!)
                 Button("Check for Updates…") { updater.checkForUpdates() }
                     .buttonStyle(RowTextButtonStyle(formRow: true))
                     .disabled(!updater.canCheckForUpdates)

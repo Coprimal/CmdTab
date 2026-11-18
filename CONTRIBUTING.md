@@ -79,6 +79,13 @@ BUDGET_SCALE=3 scripts/measure.sh latency 10     # in a VM
 
 If `latency` fails with "Could not open local log store: Operation not permitted", run it from a Terminal with Full Disk Access, or with `sudo`.
 
+## Update feed
+
+- **Feed:** since 0.1.3, `SUFeedURL` is `https://cmdtab.coprimal.dev/appcast.xml`, served by GitHub Pages through `.github/workflows/pages.yml` (Settings > Pages > Source = "GitHub Actions") and a Cloudflare CNAME `cmdtab` → `coprimal.github.io` (DNS only). Its source is the root `appcast.xml` on `main`.
+- **Old builds:** builds <= 0.1.2 read `https://raw.githubusercontent.com/dinhanhthi/CmdTab/main/appcast.xml`, which GitHub serves from `Coprimal/CmdTab` since the 2026-11 transfer.
+- **Never:** move or rename the root `appcast.xml`, change the Pages source, remove the custom domain, or create or fork a repo named `dinhanhthi/CmdTab` (it would take over the old path).
+- **Feed check:** `curl -sI https://cmdtab.coprimal.dev/appcast.xml` shows HTTP 200 without `location`, and both `curl -s https://cmdtab.coprimal.dev/appcast.xml | cmp - appcast.xml` and `curl -sL https://raw.githubusercontent.com/dinhanhthi/CmdTab/main/appcast.xml | cmp - appcast.xml` print nothing.
+
 ## Pull requests
 
 - Keep each change small and focused, and match the style of the code around it.

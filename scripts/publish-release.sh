@@ -17,7 +17,7 @@
 #
 # Prereqs:
 #   - gh CLI installed and authenticated (gh auth login)
-#   - origin = github.com/<GH_REPO> (default dinhanhthi/CmdTab), release commit pushed to origin/main
+#   - origin = github.com/<GH_REPO> (default Coprimal/CmdTab), release commit pushed to origin/main
 #   - CHANGELOG.md at the repo root with a `## [X.Y.Z] - <date>` section for this version
 #     (the scaffold ships one with a 0.1.0 section; fill in its date)
 #
@@ -31,7 +31,7 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 CHANGELOG="$REPO_ROOT/CHANGELOG.md"
-GH_REPO="${GH_REPO:-dinhanhthi/CmdTab}"
+GH_REPO="${GH_REPO:-Coprimal/CmdTab}"
 
 # --- 0. Args & tools -------------------------------------------------------
 YES=false

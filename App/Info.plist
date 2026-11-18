@@ -6,7 +6,7 @@
 	<key>CFBundleIconFile</key>
 	<string>AppIcon</string>
 	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/dinhanhthi/CmdTab/main/appcast.xml</string>
+	<string>https://cmdtab.coprimal.dev/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>YZl6CpOYLK4pCyWj8Na0mUHREWFP747KVk8g8Plrbtc=</string>
 	<key>SUEnableAutomaticChecks</key>
